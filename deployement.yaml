@@ -1,0 +1,11 @@
+apiVersion: v1
+kind: Pod
+metadata:
+ name: emi
+ namespace: default
+spec:
+ containers:
+ - name: emi
+   image: emi:latest
+   imagePullPolicy: Never
+ restartPolicy: Never
